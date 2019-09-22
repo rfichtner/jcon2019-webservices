@@ -3,6 +3,7 @@ package com.company.xdevcon1.rest.basic;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -14,6 +15,7 @@ import javax.ws.rs.core.Response.Status;
 
 import com.company.xdevcon1.entities.Film;
 
+@ApplicationScoped
 @Path("basic4")
 public class BasicResource4 {
 

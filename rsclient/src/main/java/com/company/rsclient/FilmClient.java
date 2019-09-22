@@ -17,7 +17,7 @@ public class FilmClient {
 
 		Response entity = client
 				.target("http://localhost:8080/")
-				.path("xdevcon1/basic4/" + id)
+				.path("basic4/" + id)
 				.request(MediaType.APPLICATION_XML)
 				.get();
 
@@ -30,7 +30,7 @@ public class FilmClient {
 
 		Film entity = client
 				.target("http://localhost:8080/")
-				.path("xdevcon1/basic4/" + id)
+				.path("basic4/" + id)
 				.request(MediaType.APPLICATION_XML)
 				.get(Film.class);
 
@@ -43,7 +43,7 @@ public class FilmClient {
 
 		Response response = client
 				.target("http://localhost:8080/")
-				.path("xdevcon1/basic4/" + id)
+				.path("basic4/" + id)
 				.request()
 				.delete();
 
@@ -51,7 +51,7 @@ public class FilmClient {
 	}
 
 	public final static void main(String args[]) {
-		System.out.println(new FilmClient().getFilmAsString(6));
+		System.out.println(new FilmClient().getFilm(4));
 		
 	}
 }
